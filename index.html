@@ -11,16 +11,62 @@
     <div class="container">
 
         <div class="background">
-            background
+            <div id="brand-name">
+                FakeTech
+            </div>
+            a fake tech company
         </div>
 
         <div class="content">
             <div class="info-text">
-                This is a fake online service.
+                This is a fake online service. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas a imperdiet turpis. Suspendisse finibus eleifend nulla sit amet ultricies. 
+                Integer augue ex, ultrices at erat nec, luctus bibendum nisi. 
+                Nam ut posuere metus, vel dictum mi. 
             </div>
 
-            <form>
-                <input></input>
+            <form class="form">
+                <div class="input">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" required>
+                </div>
+
+                <div class="input">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" required>
+                </div>
+
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="input">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" minlength="10" required>
+                </div>
+
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </div>
+
+                <div class="input">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" name="confirm-pass" id="confirm-pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </div>
+
+                <div class="create-account">
+                    <button type="submit">
+                        Create Account
+                    </button>
+                </div>
+
+                <div class="log-in">
+                    <p>Already have an account?</p>
+                    <a href="#">Log in</a>
+                </div>
+
             </form>
         </div>
 

@@ -1,11 +1,14 @@
 body {
- 
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    margin: 0;
 }
 
 .container {
     width: 100vw;
     height: 100vh;
     display: flex;
+    align-items: center;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -25,15 +28,74 @@ body {
 
 .background {
     width: 40vw;
+    font-size: 32px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#brand-name {
+    font-size: 64px;
+    font-weight: 900;
 }
 
 .content {
     width: 60vw;
-    background: rgba(255,255,255,0.5);
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
-    border: 1px solid rgba(255,255,255,0.25);
+    height: 100vh;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-text {
+    width: 40vw;
+    text-align: justify;
+}
+
+.form {
+    width: 50vw;
+    height: 50vh;
+    font-size: 16px;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 10px;
+}
+
+button {
+    font-weight: 900;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    transition: transform 250ms;
+}
+
+button:hover{
+    transform: translateY(-4px);
+}
+
+button:active {
+    background-color: #ffffff;
+    transform: translateY(4px);
 }
