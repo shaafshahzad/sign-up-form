@@ -54,11 +54,24 @@ body {
 
 .info-text {
     width: 40vw;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: -10vh;
     text-align: justify;
 }
 
-.form {
+.header {
     width: 50vw;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 55vw;
     height: 50vh;
     font-size: 16px;
     gap: 20px;
@@ -81,21 +94,33 @@ body {
 button {
     font-weight: 900;
     font-size: 16px;
-    color: white;
-    border-radius: 5px;
+    width: 40vw;
     padding: 10px 40px;
-    margin: 40px 0;
+    border-radius: 5px;
+    color: white;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     transition: transform 250ms;
 }
 
-button:hover{
-    transform: translateY(-4px);
+#create-account {
+    margin-top: 32px;
 }
 
 button:active {
     background-color: #ffffff;
     transform: translateY(4px);
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.log-in {
+    font-size: 18px;
+    font-weight: 200;
 }

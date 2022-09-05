@@ -26,45 +26,47 @@
             </div>
 
             <form class="form">
+                <p class="header">SIGN UP HERE</p>
+
                 <div class="input">
-                    <label for="first-name">First Name</label>
+                    <label for="first-name">FIRST NAME</label>
                     <input type="text" name="first-name" id="first-name" required>
                 </div>
 
                 <div class="input">
-                    <label for="last-name">Last Name</label>
+                    <label for="last-name">LAST NAME</label>
                     <input type="text" name="last-name" id="last-name" required>
                 </div>
 
                 <div class="input">
-                    <label for="email">Email</label>
+                    <label for="email">EMAIL</label>
                     <input type="email" name="email" id="email" required>
                 </div>
 
                 <div class="input">
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">PHONE NUMBER</label>
                     <input type="tel" name="phone" id="phone" minlength="10" required>
                 </div>
 
                 <div class="input">
-                    <label for="password">Password</label>
+                    <label for="password">PASSWORD</label>
                     <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 </div>
 
                 <div class="input">
-                    <label for="password">Confirm Password</label>
+                    <label for="password">CONFIRM PASSWORD</label>
                     <input type="password" name="confirm-pass" id="confirm-pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 </div>
 
                 <div class="create-account">
-                    <button type="submit">
+                    <button id="create-account" type="submit">
                         Create Account
                     </button>
                 </div>
 
                 <div class="log-in">
                     <p>Already have an account?</p>
-                    <a href="#">Log in</a>
+                    <button id="log-in" href="#">Log in</button>
                 </div>
 
             </form>
